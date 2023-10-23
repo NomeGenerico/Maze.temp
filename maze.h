@@ -1,33 +1,27 @@
-#include <iostream>
-#include <stack>
-#include <vector>
-#pragma once
-
-using namespace std;
-
-
-class cell
-{
+#include <iostream> 
+ #include <stack> 
+ #include <vector> 
+ #pragma once 
+  
+ using namespace std; 
+  
+  
+ class cell {
 public:
+    bool WallNorth;
+    bool WallEast;
+    bool WallSouth;
+    bool WallWest;
+    bool Visited;
 
-bool WallNorth;
-bool WallEast;
-bool WallSouth;
-bool WallWest;
-bool Visited;
-
-
-
-cell ()
-	{
-		bool WallNorth = true;
-		bool WallEast  = true;
-		bool WallSouth = true;
-		bool WallWest  = true;
-		bool Visited   = true;
-		cout << "test";
-	};
-
-
+    cell() : WallNorth(true), WallEast(true), WallSouth(true), WallWest(true), Visited(false){};
 };
+
+class coordinate{
+public:
+	int x;
+	int y;
 	
+	coordinate(int inx, int iny) : x(inx), y(iny){};
+	
+};
