@@ -6,7 +6,6 @@
 
 
 
-
 class cell {
 public:
     bool WallNorth;
@@ -43,5 +42,10 @@ public:
     coordinate(int inx, int iny) : x(inx), y(iny) {};
 
 };
+
+int removeWall()
+{
+    return 0;
+}
 
 extern std::vector<std::vector<cell>> MazeArray;
