@@ -1,8 +1,10 @@
-#pragma once 
-
+#pragma once
 #include <iostream> 
 #include <stack> 
 #include <vector> 
+#include "SFML\Graphics.hpp"
+#include "SFML\Window.hpp"
+#include "SFML\System.hpp"
 
 
 
@@ -42,10 +44,37 @@ public:
     coordinate(int inx, int iny) : x(inx), y(iny) {};
 
 };
-
-int removeWall()
+//toDo:
+int removeWall(coordinate cord1, coordinate cord2)
 {
+    // ToDo
+    int difX = cord1.x - cord2.x;
+    int difY = cord1.y - cord2.y;
+
+
+
+
+
+
+
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 extern std::vector<std::vector<cell>> MazeArray;
