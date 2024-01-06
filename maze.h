@@ -42,39 +42,5 @@ public:
     int y;
 
     coordinate(int inx, int iny) : x(inx), y(iny) {};
-
+    coordinate() : x(0), y(0) {};
 };
-//toDo:
-int removeWall(coordinate cord1, coordinate cord2)
-{
-    // ToDo
-    int difX = cord1.x - cord2.x;
-    int difY = cord1.y - cord2.y;
-
-
-
-
-
-
-
-    return 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-extern std::vector<std::vector<cell>> MazeArray;
